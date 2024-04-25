@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Practica1.Punto1
 {
-    public class Persona
+    public abstract class Persona
     {
         //atributos
         public string Nombre { get; set; }
@@ -28,17 +28,17 @@ namespace Practica1.Punto1
 
         //Metodos
 
-        public void MostrarDatos()
-        {
-            Console.WriteLine("Nombre: " + Nombre + "\n" + "Edad: " + Edad + "\n"+  "Ciudad:" + Ciudad+ "\n");
+        public abstract void MostrarDatos();
 
-        }
+        //Console.WriteLine("Nombre: " + Nombre + "\n" + "Edad: " + Edad + "\n"+  "Ciudad:" + Ciudad+ "\n");
 
-        public void CalcularEdad()
-        {
-            Console.WriteLine("La persona tiene: " + Edad + " Años");
 
-        }
+
+        public abstract void CalcularEdad(DateTime fecha);
+        
+            //Console.WriteLine("La persona tiene: " + Edad + " Años");
+
+        
 
 
 

@@ -7,23 +7,23 @@ string Nombre;
 int edad;
 string ciudad;
 
-Console.WriteLine("Ingrese el nombre:");
+//Console.WriteLine("Ingrese el nombre:");
 
-Nombre= Console.ReadLine();
+//Nombre= Console.ReadLine();
 
-Console.WriteLine("Ingrese la Edad:");
+//Console.WriteLine("Ingrese la Edad:");
 
-edad = Convert.ToInt32(Console.ReadLine());
+//edad = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("Ingrese la Ciudad:");
+//Console.WriteLine("Ingrese la Ciudad:");
 
-ciudad = Console.ReadLine();
+//ciudad = Console.ReadLine();
 
-Console.WriteLine("\n");
+//Console.WriteLine("\n");
 
-Persona P = new Persona(Nombre, edad, ciudad);
-P.MostrarDatos();
-P.CalcularEdad();
+//Persona P = new Persona(Nombre, edad, ciudad);
+//P.MostrarDatos();
+//P.CalcularEdad();
 
 //Estudiante  
 Console.WriteLine("\n");
@@ -57,9 +57,25 @@ int Matricula;
 
     Console.WriteLine("\n");
 
-    Estudiante Student = new Estudiante(Carrera, Matricula, Nombre, edad, ciudad);
+    
 
-    Student.MostrarDatos();
+Console.WriteLine("Ingrese la fecha de nacimiento:");
+if (DateTime.TryParse(Console.ReadLine(), out DateTime fechaDeNacimiento))
+{
+    
+    Estudiante Es = new Estudiante();
+
+    
+    Es.CalcularEdad(fechaDeNacimiento);
+}
+else
+{
+    Console.WriteLine("Fecha de nacimiento inválida. Por favor, ingrese una fecha válida en el formato Año-Mes-Dia.");
+}
+
+Estudiante Student = new Estudiante(Carrera, Matricula, Nombre, edad, ciudad);
+
+Student.MostrarDatos();
 
 //Figuras  
 Console.WriteLine("\n");

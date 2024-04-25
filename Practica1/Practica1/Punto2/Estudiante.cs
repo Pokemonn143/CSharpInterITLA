@@ -27,7 +27,7 @@ namespace Practica1.Punto2
 
         }
 
-        public void MostrarDatos()
+        public override void MostrarDatos()
         {
             Console.WriteLine("Nombre: " + base.Nombre + "\n"
                               + "Edad: " + base.Edad + "\n"
@@ -38,6 +38,16 @@ namespace Practica1.Punto2
 
         }
 
+        public override void CalcularEdad(DateTime fechaNacimiento)
+        {
+            DateTime fechaActual = DateTime.Today;
+            int edad = fechaActual.Year - fechaNacimiento.Year;
+            if (fechaNacimiento.Date > fechaActual.AddYears(-edad)) 
+            {
+                edad = edad - 1;
+            }
+            Console.WriteLine("La edad es: " + edad);
+        }
     }
 
 
