@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "inbd2CckBSD6EcMgjmRh+wPgyl1jHSh3Z4fF6+agzrtV6wU+DkD4pfFIdwGeJ15oGLbLTBq6n5IsVt2nNlit1w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\geral\\Files\\Proyectos\\Github\\CSharpInterITLA\\EjercicioEnClase_4_23_2024\\EjercicioEnClase_4_23_2024\\EjercicioEnClase_4_23_2024.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\geral\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.26\\microsoft.windowsdesktop.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\geral\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.26\\microsoft.netcore.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\geral\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.26\\microsoft.aspnetcore.app.ref.6.0.26.nupkg.sha512"
+  ],
+  "logs": []
+}
