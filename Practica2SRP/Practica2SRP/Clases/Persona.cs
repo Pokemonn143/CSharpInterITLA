@@ -2,14 +2,20 @@
 
 public class Persona
 {
-    public Persona()
+    public Persona(string N, int E, string D, string CE)
     {
+        this.nombre = N;
+        this.edad = E;
+        this.direccion = D;
+        this.correoElectronico = CE;
     }
 
-    private string nombre;
-    private int edad;
-    private string direccion;
-    private string correoElectronico;
+    public string nombre;
+    public int edad;
+    public string direccion;
+    public string correoElectronico;
+
+
 
     public void ImprimirDatos()
     {
