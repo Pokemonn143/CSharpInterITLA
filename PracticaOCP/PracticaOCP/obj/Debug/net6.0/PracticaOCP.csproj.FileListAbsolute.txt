@@ -1,0 +1,5 @@
+C:\Users\geral\Files\Proyectos\Github\CSharpInterITLA\PracticaOCP\PracticaOCP\obj\Debug\net6.0\PracticaOCP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\geral\Files\Proyectos\Github\CSharpInterITLA\PracticaOCP\PracticaOCP\obj\Debug\net6.0\PracticaOCP.AssemblyInfoInputs.cache
+C:\Users\geral\Files\Proyectos\Github\CSharpInterITLA\PracticaOCP\PracticaOCP\obj\Debug\net6.0\PracticaOCP.AssemblyInfo.cs
+C:\Users\geral\Files\Proyectos\Github\CSharpInterITLA\PracticaOCP\PracticaOCP\obj\Debug\net6.0\PracticaOCP.csproj.CoreCompileInputs.cache
+C:\Users\geral\Files\Proyectos\Github\CSharpInterITLA\PracticaOCP\PracticaOCP\obj\Debug\net6.0\PracticaOCP.sourcelink.json
