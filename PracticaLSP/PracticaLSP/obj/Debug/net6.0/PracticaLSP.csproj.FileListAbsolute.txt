@@ -1,0 +1,12 @@
+C:\Users\geral\Desktop\Github\CSharpInterITLA\PracticaLSP\PracticaLSP\bin\Debug\net6.0\PracticaLSP.deps.json
+C:\Users\geral\Desktop\Github\CSharpInterITLA\PracticaLSP\PracticaLSP\bin\Debug\net6.0\PracticaLSP.dll
+C:\Users\geral\Desktop\Github\CSharpInterITLA\PracticaLSP\PracticaLSP\bin\Debug\net6.0\PracticaLSP.pdb
+C:\Users\geral\Desktop\Github\CSharpInterITLA\PracticaLSP\PracticaLSP\obj\Debug\net6.0\PracticaLSP.csproj.AssemblyReference.cache
+C:\Users\geral\Desktop\Github\CSharpInterITLA\PracticaLSP\PracticaLSP\obj\Debug\net6.0\PracticaLSP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\geral\Desktop\Github\CSharpInterITLA\PracticaLSP\PracticaLSP\obj\Debug\net6.0\PracticaLSP.AssemblyInfoInputs.cache
+C:\Users\geral\Desktop\Github\CSharpInterITLA\PracticaLSP\PracticaLSP\obj\Debug\net6.0\PracticaLSP.AssemblyInfo.cs
+C:\Users\geral\Desktop\Github\CSharpInterITLA\PracticaLSP\PracticaLSP\obj\Debug\net6.0\PracticaLSP.csproj.CoreCompileInputs.cache
+C:\Users\geral\Desktop\Github\CSharpInterITLA\PracticaLSP\PracticaLSP\obj\Debug\net6.0\PracticaLSP.dll
+C:\Users\geral\Desktop\Github\CSharpInterITLA\PracticaLSP\PracticaLSP\obj\Debug\net6.0\refint\PracticaLSP.dll
+C:\Users\geral\Desktop\Github\CSharpInterITLA\PracticaLSP\PracticaLSP\obj\Debug\net6.0\PracticaLSP.pdb
+C:\Users\geral\Desktop\Github\CSharpInterITLA\PracticaLSP\PracticaLSP\obj\Debug\net6.0\ref\PracticaLSP.dll
