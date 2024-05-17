@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "Qn64Y1+Jthyph/pLC3lXHGIJF7YRe1NXuLwngPnkAGYPEjP97Hz7OuewdU9ZBVPE3pHD9qGTSK7wEgffvOEj0A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\geral\\Files\\Proyectos\\Github\\CSharpInterITLA\\PracticaDI\\Test\\Test.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\geral\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.26\\microsoft.windowsdesktop.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\geral\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.26\\microsoft.netcore.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\geral\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.26\\microsoft.aspnetcore.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\geral\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.26\\microsoft.netcore.app.host.win-x64.6.0.26.nupkg.sha512"
+  ],
+  "logs": []
+}
