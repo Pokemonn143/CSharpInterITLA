@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "an4es3CVS0i7SWt7krFrTzPx3JZ6BmI9ZfEJTPnHBzllZkrn0B1KM1o1TcC7DDWlbeKsufrfEkHLyEVwA7EPKw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\geral\\Files\\Proyectos\\Github\\CSharpInterITLA\\AutoBus\\AutoBus.Domain\\AutoBus.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\geral\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.26\\microsoft.windowsdesktop.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\geral\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.26\\microsoft.netcore.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\geral\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.26\\microsoft.aspnetcore.app.ref.6.0.26.nupkg.sha512"
+  ],
+  "logs": []
+}

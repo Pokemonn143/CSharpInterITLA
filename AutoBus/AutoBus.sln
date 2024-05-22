@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoBus.Domain", "AutoBus.Domain\AutoBus.Domain.csproj", "{21FB75A7-42AC-4D69-A07D-A188639C7753}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoBus.Infraestructure", "AutoBus.Infraestructure\AutoBus.Infraestructure.csproj", "{D7D82F12-5560-4E27-B476-E7A28321573A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{21FB75A7-42AC-4D69-A07D-A188639C7753}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21FB75A7-42AC-4D69-A07D-A188639C7753}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21FB75A7-42AC-4D69-A07D-A188639C7753}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21FB75A7-42AC-4D69-A07D-A188639C7753}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7D82F12-5560-4E27-B476-E7A28321573A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7D82F12-5560-4E27-B476-E7A28321573A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7D82F12-5560-4E27-B476-E7A28321573A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7D82F12-5560-4E27-B476-E7A28321573A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {45168B1F-1E69-409C-969E-0682A1D9FE97}
+	EndGlobalSection
+EndGlobal
