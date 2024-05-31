@@ -16,8 +16,8 @@ namespace AutoBus.Infraestructure.Models
         [Column(TypeName = "datetime")]
         public DateTime? FechaCreacion { get; set; }
 
-        //[ForeignKey("IdReserva")]
-        //[InverseProperty("ReservaDetalles")]
-        //public virtual Reserva? IdReservaNavigation { get; set; }
+        [ForeignKey("IdReserva")]
+        [InverseProperty("ReservaDetalles")]
+        public virtual Reserva? IdReservaNavigation { get; set; }
     }
 }

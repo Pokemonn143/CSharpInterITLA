@@ -33,12 +33,12 @@ namespace AutoBus.Infraestructure.Models
         [Column(TypeName = "datetime")]
         public DateTime? FechaCreacion { get; set; }
 
-        //[ForeignKey("IdBus")]
-        //[InverseProperty("Viajes")]
-        //public virtual Bus? IdBusNavigation { get; set; }
-        //[ForeignKey("IdRuta")]
-        //[InverseProperty("Viajes")]
-        //public virtual Ruta? IdRutaNavigation { get; set; }
+        [ForeignKey("IdBus")]
+        [InverseProperty("Viajes")]
+        public virtual Bus? IdBusNavigation { get; set; }
+        [ForeignKey("IdRuta")]
+        [InverseProperty("Viajes")]
+        public virtual Ruta? IdRutaNavigation { get; set; }
         [InverseProperty("IdViajeNavigation")]
         public virtual ICollection<Reserva> Reservas { get; set; }
     }
