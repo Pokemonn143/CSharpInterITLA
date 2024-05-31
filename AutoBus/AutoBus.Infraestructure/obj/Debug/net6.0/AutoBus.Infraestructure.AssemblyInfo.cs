@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AutoBus.Infraestructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2009183f5bab6998c4b83757a93ce4205eae9f2d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b4bd30eaf3246021a20cced949a32013d375ca13")]
 [assembly: System.Reflection.AssemblyProductAttribute("AutoBus.Infraestructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AutoBus.Infraestructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

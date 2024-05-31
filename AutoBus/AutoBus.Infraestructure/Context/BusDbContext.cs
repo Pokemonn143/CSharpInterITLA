@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
-using AutoBus.Infraestructure.Models;
+using AutoBus.Domain.Entities;
 
 namespace AutoBus.Infraestructure.Context
 {

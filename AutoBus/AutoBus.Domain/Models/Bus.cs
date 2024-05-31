@@ -1,6 +1,6 @@
 ﻿
 
-namespace AutoBus.Domain.Entities
+namespace AutoBus.Domain.Models
 {
     public class Bus
     {

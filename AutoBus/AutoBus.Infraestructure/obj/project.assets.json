@@ -782,6 +782,19 @@
             "rid": "win"
           }
         }
+      },
+      "AutoBus.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.30"
+        },
+        "compile": {
+          "bin/placeholder/AutoBus.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AutoBus.Domain.dll": {}
+        }
       }
     }
   },
@@ -2003,10 +2016,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "AutoBus.Domain/1.0.0": {
+      "type": "project",
+      "path": "../AutoBus.Domain/AutoBus.Domain.csproj",
+      "msbuildProject": "../AutoBus.Domain/AutoBus.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "AutoBus.Domain >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.30",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.30",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.30"
@@ -2043,7 +2062,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\geral\\Files\\Proyectos\\Github\\CSharpInterITLA\\AutoBus\\AutoBus.Domain\\AutoBus.Domain.csproj": {
+              "projectPath": "C:\\Users\\geral\\Files\\Proyectos\\Github\\CSharpInterITLA\\AutoBus\\AutoBus.Domain\\AutoBus.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

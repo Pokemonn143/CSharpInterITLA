@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
 
-namespace AutoBus.Infraestructure.Models
+namespace AutoBus.Domain.Entities
 {
     [Table("ReservaDetalle")]
     public partial class ReservaDetalle

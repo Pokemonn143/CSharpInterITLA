@@ -1,12 +1,5 @@
-C:\Users\geral\Files\Proyectos\Github\CSharpInterITLA\AutoBus\AutoBus.Domain\bin\Debug\net6.0\AutoBus.Domain.deps.json
-C:\Users\geral\Files\Proyectos\Github\CSharpInterITLA\AutoBus\AutoBus.Domain\bin\Debug\net6.0\AutoBus.Domain.dll
-C:\Users\geral\Files\Proyectos\Github\CSharpInterITLA\AutoBus\AutoBus.Domain\bin\Debug\net6.0\AutoBus.Domain.pdb
 C:\Users\geral\Files\Proyectos\Github\CSharpInterITLA\AutoBus\AutoBus.Domain\obj\Debug\net6.0\AutoBus.Domain.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\geral\Files\Proyectos\Github\CSharpInterITLA\AutoBus\AutoBus.Domain\obj\Debug\net6.0\AutoBus.Domain.AssemblyInfoInputs.cache
 C:\Users\geral\Files\Proyectos\Github\CSharpInterITLA\AutoBus\AutoBus.Domain\obj\Debug\net6.0\AutoBus.Domain.AssemblyInfo.cs
 C:\Users\geral\Files\Proyectos\Github\CSharpInterITLA\AutoBus\AutoBus.Domain\obj\Debug\net6.0\AutoBus.Domain.csproj.CoreCompileInputs.cache
 C:\Users\geral\Files\Proyectos\Github\CSharpInterITLA\AutoBus\AutoBus.Domain\obj\Debug\net6.0\AutoBus.Domain.sourcelink.json
-C:\Users\geral\Files\Proyectos\Github\CSharpInterITLA\AutoBus\AutoBus.Domain\obj\Debug\net6.0\AutoBus.Domain.dll
-C:\Users\geral\Files\Proyectos\Github\CSharpInterITLA\AutoBus\AutoBus.Domain\obj\Debug\net6.0\refint\AutoBus.Domain.dll
-C:\Users\geral\Files\Proyectos\Github\CSharpInterITLA\AutoBus\AutoBus.Domain\obj\Debug\net6.0\AutoBus.Domain.pdb
-C:\Users\geral\Files\Proyectos\Github\CSharpInterITLA\AutoBus\AutoBus.Domain\obj\Debug\net6.0\ref\AutoBus.Domain.dll

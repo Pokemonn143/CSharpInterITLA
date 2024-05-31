@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 
-namespace AutoBus.Domain.Entities
+namespace AutoBus.Domain.Models
 {
     public class Usuario
     {
