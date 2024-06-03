@@ -1,18 +1,20 @@
 ﻿
 
+using AutoBus.Domain.Entities;
+
 namespace AutoBus.Domain.Interfaces
 {
     public interface IAsiento
     {
-        Task Save(Department departament);
-        Task Save(List<Department> departaments);
+        Task Save(Asiento departament);
+        Task Save(List<Asiento> departaments);
 
-        Task Update(Department departament);
+        Task Update(Asiento departament);
 
-        Task Update(List<Department> departaments);
+        Task Update(List<Asiento> departaments);
 
         Task Get(int ID);
 
-        Task<List<Department>> Getall();
+        Task<List<Asiento>> Getall();
     }
 }

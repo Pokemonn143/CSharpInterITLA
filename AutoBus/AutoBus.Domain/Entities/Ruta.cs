@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using AutoBus.Domain.Core;
 using Microsoft.EntityFrameworkCore;
 
 namespace AutoBus.Domain.Entities
 {
-    public partial class Ruta
+    public partial class Ruta:AuditableEntity
     {
         public Ruta()
         {
@@ -22,7 +23,7 @@ namespace AutoBus.Domain.Entities
         [Unicode(false)]
         public string? Destino { get; set; }
         [Column(TypeName = "datetime")]
-        public DateTime? FechaCreacion { get; set; }
+       
 
         [InverseProperty("IdRutaNavigation")]
         public virtual ICollection<Viaje> Viajes { get; set; }

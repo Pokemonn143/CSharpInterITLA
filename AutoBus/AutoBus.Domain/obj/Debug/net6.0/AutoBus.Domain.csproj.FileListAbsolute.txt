@@ -1,3 +1,4 @@
+C:\Users\geral\Files\Proyectos\Github\CSharpInterITLA\AutoBus\AutoBus.Domain\obj\Debug\net6.0\AutoBus.Domain.csproj.AssemblyReference.cache
 C:\Users\geral\Files\Proyectos\Github\CSharpInterITLA\AutoBus\AutoBus.Domain\obj\Debug\net6.0\AutoBus.Domain.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\geral\Files\Proyectos\Github\CSharpInterITLA\AutoBus\AutoBus.Domain\obj\Debug\net6.0\AutoBus.Domain.AssemblyInfoInputs.cache
 C:\Users\geral\Files\Proyectos\Github\CSharpInterITLA\AutoBus\AutoBus.Domain\obj\Debug\net6.0\AutoBus.Domain.AssemblyInfo.cs

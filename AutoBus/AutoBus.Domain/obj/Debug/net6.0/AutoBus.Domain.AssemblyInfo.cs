@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AutoBus.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b4bd30eaf3246021a20cced949a32013d375ca13")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e9def7eb951cd9b314ea45263aa321d9599f8dd8")]
 [assembly: System.Reflection.AssemblyProductAttribute("AutoBus.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AutoBus.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

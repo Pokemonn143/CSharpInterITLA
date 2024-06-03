@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using AutoBus.Domain.Core;
 using Microsoft.EntityFrameworkCore;
 
 namespace AutoBus.Domain.Entities
 {
     [Table("Usuario")]
-    public partial class Usuario
+    public partial class Usuario : AuditableEntity
     {
         [Key]
         public int IdUsuario { get; set; }
@@ -27,6 +28,6 @@ namespace AutoBus.Domain.Entities
         [Unicode(false)]
         public string? TipoUsuario { get; set; }
         [Column(TypeName = "datetime")]
-        public DateTime? FechaCreacion { get; set; }
     }
+
 }

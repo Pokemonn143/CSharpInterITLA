@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using AutoBus.Domain.Core;
 using Microsoft.EntityFrameworkCore;
 
 namespace AutoBus.Domain.Entities
 {
     [Table("Reserva")]
-    public partial class Reserva
+    public partial class Reserva:AuditableEntity
     {
         public Reserva()
         {
@@ -22,7 +23,7 @@ namespace AutoBus.Domain.Entities
         [Column(TypeName = "decimal(10, 2)")]
         public decimal? MontoTotal { get; set; }
         [Column(TypeName = "datetime")]
-        public DateTime? FechaCreacion { get; set; }
+        
 
         [ForeignKey("IdViaje")]
         [InverseProperty("Reservas")]

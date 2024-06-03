@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using AutoBus.Domain.Core;
 using Microsoft.EntityFrameworkCore;
 
 namespace AutoBus.Domain.Entities
 {
     [Table("Bus")]
-    public partial class Bus
+    public partial class Bus:AuditableEntity
     {
         public Bus()
         {
@@ -28,7 +29,7 @@ namespace AutoBus.Domain.Entities
         public int? CapacidadTotal { get; set; }
         public bool? Disponible { get; set; }
         [Column(TypeName = "datetime")]
-        public DateTime? FechaCreacion { get; set; }
+        
 
         [InverseProperty("IdBusNavigation")]
         public virtual ICollection<Asiento> Asientos { get; set; }
