@@ -27,7 +27,7 @@ namespace AutoBus.Domain.Entities
         [StringLength(20)]
         [Unicode(false)]
         public string? TipoUsuario { get; set; }
-        [Column(TypeName = "datetime")]
+        
     }
 
 }
