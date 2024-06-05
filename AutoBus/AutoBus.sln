@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoBus.Domain", "AutoBus.D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoBus.Infraestructure", "AutoBus.Infraestructure\AutoBus.Infraestructure.csproj", "{D7D82F12-5560-4E27-B476-E7A28321573A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoBusAPI", "AutoBusAPI\AutoBusAPI.csproj", "{01A44A59-0A98-4B61-BE74-CC77F75478B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoBusAPI", "AutoBusAPI\AutoBusAPI.csproj", "{01A44A59-0A98-4B61-BE74-CC77F75478B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOC", "IOC\IOC.csproj", "{863957E2-8FA9-46FF-A66D-15C02EC0E0FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IOC", "IOC\IOC.csproj", "{863957E2-8FA9-46FF-A66D-15C02EC0E0FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autobus.Infraestructure.Unit.Test", "Autobus.Test\Autobus.Infraestructure.Unit.Test.csproj", "{6CAD4143-D127-4B0B-874F-0B18E117782B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{863957E2-8FA9-46FF-A66D-15C02EC0E0FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{863957E2-8FA9-46FF-A66D-15C02EC0E0FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{863957E2-8FA9-46FF-A66D-15C02EC0E0FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CAD4143-D127-4B0B-874F-0B18E117782B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CAD4143-D127-4B0B-874F-0B18E117782B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CAD4143-D127-4B0B-874F-0B18E117782B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CAD4143-D127-4B0B-874F-0B18E117782B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
