@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\geral\\Desktop\\Github\\CSharpInterITLA\\AutoBus\\IOC\\IOC.csproj": {}
+    "C:\\Users\\geral\\Files\\Proyectos\\Github\\CSharpInterITLA\\AutoBus\\IOC\\IOC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\geral\\Desktop\\Github\\CSharpInterITLA\\AutoBus\\IOC\\IOC.csproj": {
+    "C:\\Users\\geral\\Files\\Proyectos\\Github\\CSharpInterITLA\\AutoBus\\IOC\\IOC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\geral\\Desktop\\Github\\CSharpInterITLA\\AutoBus\\IOC\\IOC.csproj",
+        "projectUniqueName": "C:\\Users\\geral\\Files\\Proyectos\\Github\\CSharpInterITLA\\AutoBus\\IOC\\IOC.csproj",
         "projectName": "IOC",
-        "projectPath": "C:\\Users\\geral\\Desktop\\Github\\CSharpInterITLA\\AutoBus\\IOC\\IOC.csproj",
+        "projectPath": "C:\\Users\\geral\\Files\\Proyectos\\Github\\CSharpInterITLA\\AutoBus\\IOC\\IOC.csproj",
         "packagesPath": "C:\\Users\\geral\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\geral\\Desktop\\Github\\CSharpInterITLA\\AutoBus\\IOC\\obj\\",
+        "outputPath": "C:\\Users\\geral\\Files\\Proyectos\\Github\\CSharpInterITLA\\AutoBus\\IOC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -49,16 +49,31 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

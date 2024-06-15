@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "O3GAPRLeKMLbowMqjzcK2CccCOfsgfvL+WACSbJVDGxj5tC5ChnbtkusHoCUonit9ukZkGN/RObRi7SjDFlVAQ==",
+  "dgSpecHash": "aidyYteAQf1qXmIIU6TGCZlyg6FUkZps0X0o2vdZwpX5M9e9GJ2SFjxTkr3nPqaOzlrepQxK1sLXhPNfsQL/ww==",
   "success": true,
-  "projectFilePath": "C:\\Users\\geral\\Desktop\\Github\\CSharpInterITLA\\AutoBus\\Autobus.Test\\Autobus.Infraestructure.Unit.Test.csproj",
+  "projectFilePath": "C:\\Users\\geral\\Files\\Proyectos\\Github\\CSharpInterITLA\\AutoBus\\Autobus.Test\\Autobus.Infraestructure.Unit.Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\geral\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\geral\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
@@ -112,7 +112,10 @@
     "C:\\Users\\geral\\.nuget\\packages\\xunit.core\\2.4.1\\xunit.core.2.4.1.nupkg.sha512",
     "C:\\Users\\geral\\.nuget\\packages\\xunit.extensibility.core\\2.4.1\\xunit.extensibility.core.2.4.1.nupkg.sha512",
     "C:\\Users\\geral\\.nuget\\packages\\xunit.extensibility.execution\\2.4.1\\xunit.extensibility.execution.2.4.1.nupkg.sha512",
-    "C:\\Users\\geral\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.3\\xunit.runner.visualstudio.2.4.3.nupkg.sha512"
+    "C:\\Users\\geral\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.3\\xunit.runner.visualstudio.2.4.3.nupkg.sha512",
+    "C:\\Users\\geral\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.26\\microsoft.windowsdesktop.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\geral\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.26\\microsoft.netcore.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\geral\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.26\\microsoft.aspnetcore.app.ref.6.0.26.nupkg.sha512"
   ],
   "logs": []
 }
