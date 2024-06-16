@@ -1,18 +1,29 @@
 ﻿
 
+using AutoBus.Domain.Core;
+
 namespace AutoBus.Domain.Models
 {
-    public class Asiento
+    public abstract class AsientoBaseModel
     {
-        public int AsientoId { get; private set; }
-        public int? BusId { get; private set; }
-        public int? NumeroPiso { get; private set; }
-        public int? NumeroAsiento { get; private set; }
-        public DateTime? FechaCreacion { get; private set; }
+        public int AsientoId { get;  set; }
+        public int? BusId { get;  set; }
+        public int? NumeroPiso { get;  set; }
+        public int? NumeroAsiento { get;  set; }
 
-        public Asiento()
-        {
+       
 
-        }
+
     }
+
+    public class AsientoDeleteModel : DeleteEntityModelBase { }
+
+    public class AsientoUpdateModel:AsientoBaseModel 
+    {
+        public DateTime? FechaCreacion { get; set; }
+    }
+
+    public class AsientoCreateModel:AsientoBaseModel { }
+
+    public class AsientoSelectModel:AsientoBaseModel { }
 }

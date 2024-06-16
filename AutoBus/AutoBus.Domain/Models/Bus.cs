@@ -1,24 +1,40 @@
 ﻿
 
+using AutoBus.Domain.Core;
+
 namespace AutoBus.Domain.Models
 {
-    public class Bus
+    public abstract class BusBaseModel
     {
-        public int BusId { get; private set; }
-        public string? NumeroPlaca { get; private set; }
-        public string? Nombre { get; private set; }
-        public int? CapacidadPiso1 { get; private set; }
-        public int? CapacidadPiso2 { get; private set; }
-        public int? CapacidadTotal { get; private set; }
-        public bool? Disponible { get; private set; }
-        public DateTime? FechaCreacion { get; private set; }
-
+        public int BusId { get;  set; }
+        public string? NumeroPlaca { get;  set; }
+        public string? Nombre { get;  set; }
+        public int? CapacidadPiso1 { get;  set; }
+        public int? CapacidadPiso2 { get; set; }
+        public int? CapacidadTotal { get;  set; }
+        public bool? Disponible { get; set; }
         
-        public List<Asiento> Asientos;
+        }
 
-        public List<Viaje> viajes;
-        
 
+    public class BusDeleteModel : DeleteEntityModelBase { }
+
+    public class BusUpdateModel : BusBaseModel 
+    { 
+    public DateTime? FechaCreacion { get; set; }
 
     }
+
+    public class BusCreateModel : BusBaseModel { }
+
+        public class BusSelectModel : BusBaseModel 
+    {
+
+        public List<AsientoSelectModel> Asientos;
+
+        public List<ViajeSelectModel> viajes;
+
+    }
+
 }
+

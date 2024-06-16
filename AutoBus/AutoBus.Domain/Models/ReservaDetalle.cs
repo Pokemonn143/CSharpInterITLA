@@ -1,13 +1,28 @@
 ﻿
 
+using AutoBus.Domain.Core;
+
 namespace AutoBus.Domain.Models
 {
-    public class ReservaDetalle
+    public abstract class ReservaDetalleBaseModel
     {
-        public int ReservaDetalleId { get; private set; }
-        public int? ReservaId { get; private set; }
-        public int? AsientoId { get; private set; }
-        public DateTime? FechaCreacion { get; private set; }
+        public int ReservaDetalleId { get;  set; }
+        public int? ReservaId { get;  set; }
+        public int? AsientoId { get;  set; }
+        public DateTime? FechaCreacion { get;  set; }
 
     }
+
+  
+
+    public class ReservaDetalleDeleteModel : DeleteEntityModelBase { }
+
+    public class ReservaDetalleUpdateModel : ReservaDetalleBaseModel
+    {
+        public DateTime? FechaCreacion { get; set; }
+    }
+
+    public class ReservaDetalleCreateModel : ReservaDetalleBaseModel { }
+
+    public class ReservaDetalleSelectModel : ReservaDetalleBaseModel { }
 }

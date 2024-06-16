@@ -1,19 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using AutoBus.Domain.Core;
 
 namespace AutoBus.Domain.Models
 {
-    public class Ruta
+    public abstract class RutaBaseModel
     {
-        public int RutaId { get; private set; }
-        public string? Origen { get; private set; }
-        public string? Destino { get; private set; }
-        public DateTime? FechaCreacion { get; private set; }
-
-        public List<Viaje> viajes;
-
+        public int RutaId { get;  set; }
+        public string? Origen { get;  set; }
+        public string? Destino { get;  set; }
+        
     }
+
+    public class RutaDeleteModel : DeleteEntityModelBase { }
+
+    public class RutaUpdateModel : RutaBaseModel
+    {
+        public DateTime? FechaCreacion { get; set; }
+    }
+
+    public class RutaCreateModel : RutaBaseModel { }
+
+    public class RutaSelectModel : RutaBaseModel
+    {
+        public List<ViajeSelectModel> viajes;
+    }
+
 }
