@@ -23,7 +23,11 @@ namespace AutoBus.Domain.Models
         public DateTime? FechaCreacion { get; set; }
     }
 
-    public class UsuarioCreateModel : UsuarioBaseModel { }
+    public class UsuarioCreateModel : UsuarioBaseModel 
+    {
+        public DateTime? FechaCreacion { get; set; }
+
+    }
 
     public class UsuarioSelectModel : UsuarioBaseModel { }
 }

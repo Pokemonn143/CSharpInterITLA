@@ -33,7 +33,11 @@ namespace AutoBus.Domain.Models
         public DateTime? FechaCreacion { get; set; }
     }
 
-    public class ViajeCreateModel : ViajeBaseModel { }
+    public class ViajeCreateModel : ViajeBaseModel 
+    {
+        public DateTime? FechaCreacion { get; set; }
+
+    }
 
     public class ViajeSelectModel : ViajeBaseModel
     {

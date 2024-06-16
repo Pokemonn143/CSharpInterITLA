@@ -9,12 +9,12 @@ namespace AutoBus.Domain.Interfaces
 {
     public interface IBus
     {
-        Task Save(Bus departament);
-        Task Save(List<Bus> departaments);
+        Task Save(Bus Bus);
+        Task Save(List<Bus> Buses);
 
-        Task Update(Bus departament);
+        Task Update(Bus Bus);
 
-        Task Update(List<Bus> departaments);
+        Task Update(List<Bus> Buses);
 
         Task Get(int ID);
 

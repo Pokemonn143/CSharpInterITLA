@@ -25,7 +25,11 @@ namespace AutoBus.Domain.Models
 
     }
 
-    public class BusCreateModel : BusBaseModel { }
+    public class BusCreateModel : BusBaseModel 
+    
+    {
+        public DateTime? FechaCreacion { get; set; }
+    }
 
         public class BusSelectModel : BusBaseModel 
     {
@@ -33,6 +37,8 @@ namespace AutoBus.Domain.Models
         public List<AsientoSelectModel> Asientos;
 
         public List<ViajeSelectModel> viajes;
+
+
 
     }
 

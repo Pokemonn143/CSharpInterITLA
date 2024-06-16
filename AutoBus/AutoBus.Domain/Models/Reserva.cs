@@ -14,8 +14,6 @@ namespace AutoBus.Domain.Models
        
     }
 
-    
-
     public class ReservaDeleteModel : DeleteEntityModelBase { }
 
     public class ReservaUpdateModel : ReservaBaseModel
@@ -23,7 +21,11 @@ namespace AutoBus.Domain.Models
         public DateTime? FechaCreacion { get; set; }
     }
 
-    public class ReservaCreateModel : ReservaBaseModel { }
+    public class ReservaCreateModel : ReservaBaseModel 
+    {
+
+        public DateTime? FechaCreacion { get; set; }
+    }
 
     public class ReservaSelectModel : ReservaBaseModel
     {

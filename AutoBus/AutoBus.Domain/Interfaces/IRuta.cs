@@ -9,12 +9,12 @@ namespace AutoBus.Domain.Interfaces
 {
     public interface IRuta
     {
-        Task Save(Ruta departament);
-        Task Save(List<Ruta> departaments);
+        Task Save(Ruta ruta);
+        Task Save(List<Ruta> rutas);
 
-        Task Update(Ruta departament);
+        Task Update(Ruta rutas);
 
-        Task Update(List<Ruta> departaments);
+        Task Update(List<Ruta> rutas);
 
         Task Get(int ID);
 

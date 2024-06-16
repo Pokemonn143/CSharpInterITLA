@@ -9,12 +9,12 @@ namespace AutoBus.Domain.Interfaces
 {
     public interface IReserva
     {
-        Task Save(Reserva departament);
-        Task Save(List<Reserva> departaments);
+        Task Save(Reserva reserva);
+        Task Save(List<Reserva> reservas);
 
-        Task Update(Reserva departament);
+        Task Update(Reserva reserva);
 
-        Task Update(List<Reserva> departaments);
+        Task Update(List<Reserva> reservas);
 
         Task Get(int ID);
 

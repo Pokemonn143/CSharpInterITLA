@@ -17,7 +17,12 @@ namespace AutoBus.Domain.Models
         public DateTime? FechaCreacion { get; set; }
     }
 
-    public class RutaCreateModel : RutaBaseModel { }
+    public class RutaCreateModel : RutaBaseModel 
+    {
+
+        public DateTime? FechaCreacion { get; set; }
+
+    }
 
     public class RutaSelectModel : RutaBaseModel
     {

@@ -9,7 +9,7 @@ namespace AutoBus.Domain.Models
         public int ReservaDetalleId { get;  set; }
         public int? ReservaId { get;  set; }
         public int? AsientoId { get;  set; }
-        public DateTime? FechaCreacion { get;  set; }
+        
 
     }
 
@@ -22,7 +22,11 @@ namespace AutoBus.Domain.Models
         public DateTime? FechaCreacion { get; set; }
     }
 
-    public class ReservaDetalleCreateModel : ReservaDetalleBaseModel { }
+    public class ReservaDetalleCreateModel : ReservaDetalleBaseModel 
+    
+    {
+        public DateTime? FechaCreacion { get; set; }
+    }
 
     public class ReservaDetalleSelectModel : ReservaDetalleBaseModel { }
 }

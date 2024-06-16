@@ -9,12 +9,12 @@ namespace AutoBus.Domain.Interfaces
 {
     public interface IUsuario
     {
-        Task Save(Usuario departament);
-        Task Save(List<Usuario> departaments);
+        Task Save(Usuario usuario);
+        Task Save(List<Usuario> usuarios);
 
-        Task Update(Usuario departament);
+        Task Update(Usuario usuario);
 
-        Task Update(List<Usuario> departaments);
+        Task Update(List<Usuario> usuarios);
 
         Task Get(int ID);
 
