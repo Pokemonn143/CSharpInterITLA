@@ -10,7 +10,7 @@ namespace AutoBus.Domain.Models
     public class ViajeBaseModel
     {
 
-        public int ViajeId { get;  set; }
+        
         public int? BusId { get;  set; }
         public int? RutaId { get;  set; }
         public DateTime? FechaSalida { get;  set; }
@@ -22,7 +22,8 @@ namespace AutoBus.Domain.Models
         public int? AsientosReservados { get;  set; }
         public int? AsientosDisponibles { get;  set; }
         public int Completo { get;  set; }
-       
+        public DateTime? FechaCreacion { get; set; }
+
     }
 
 
@@ -30,17 +31,18 @@ namespace AutoBus.Domain.Models
 
     public class ViajeUpdateModel : ViajeBaseModel
     {
-        public DateTime? FechaCreacion { get; set; }
+        public int ViajeId { get; set; }
     }
 
     public class ViajeCreateModel : ViajeBaseModel 
     {
-        public DateTime? FechaCreacion { get; set; }
+        
 
     }
 
     public class ViajeSelectModel : ViajeBaseModel
     {
+        public int ViajeId { get; set; }
         private List<ReservaSelectModel> reservas;
 
     }

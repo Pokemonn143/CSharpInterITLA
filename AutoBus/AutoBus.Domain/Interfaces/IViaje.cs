@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -19,5 +20,7 @@ namespace AutoBus.Domain.Interfaces
         Task Get(int ID);
 
         Task<List<Viaje>> Getall();
+
+        Task<bool> Exists(Expression<Func<Viaje, bool>> filter);
     }
 }

@@ -4,7 +4,7 @@ namespace AutoBus.Domain.Models
 {
     public abstract class RutaBaseModel
     {
-        public int RutaId { get;  set; }
+        public DateTime? FechaCreacion { get; set; }
         public string? Origen { get;  set; }
         public string? Destino { get;  set; }
         
@@ -14,18 +14,19 @@ namespace AutoBus.Domain.Models
 
     public class RutaUpdateModel : RutaBaseModel
     {
-        public DateTime? FechaCreacion { get; set; }
+        public int RutaId { get; set; }
     }
 
     public class RutaCreateModel : RutaBaseModel 
     {
 
-        public DateTime? FechaCreacion { get; set; }
+       
 
     }
 
     public class RutaSelectModel : RutaBaseModel
     {
+        public int RutaId { get; set; }
         public List<ViajeSelectModel> viajes;
     }
 

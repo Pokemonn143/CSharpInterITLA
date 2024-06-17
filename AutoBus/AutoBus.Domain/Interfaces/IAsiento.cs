@@ -1,6 +1,7 @@
 ﻿
 
 using AutoBus.Domain.Entities;
+using System.Linq.Expressions;
 
 namespace AutoBus.Domain.Interfaces
 {
@@ -16,5 +17,7 @@ namespace AutoBus.Domain.Interfaces
         Task Get(int ID);
 
         Task<List<Asiento>> Getall();
+
+        Task<bool> Exists(Expression<Func<Asiento, bool>> filter);
     }
 }
