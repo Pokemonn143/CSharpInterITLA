@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AutoBusAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6659bf4c11411f5ff94eaf2a87a0ad9049410325")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f511a1632c5c25abe734c1912b61cc4695eca4c4")]
 [assembly: System.Reflection.AssemblyProductAttribute("AutoBusAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AutoBusAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

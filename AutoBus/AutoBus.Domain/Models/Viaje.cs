@@ -43,7 +43,7 @@ namespace AutoBus.Domain.Models
     public class ViajeSelectModel : ViajeBaseModel
     {
         public int ViajeId { get; set; }
-        private List<ReservaSelectModel> reservas;
+        
 
     }
 

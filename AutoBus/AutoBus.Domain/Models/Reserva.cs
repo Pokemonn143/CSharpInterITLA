@@ -32,6 +32,5 @@ namespace AutoBus.Domain.Models
     public class ReservaSelectModel : ReservaBaseModel
     {
         public int ReservaId { get; set; }
-        public List<ReservaSelectModel> reservaDetalles;
     }
 }

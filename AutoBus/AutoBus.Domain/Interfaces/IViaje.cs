@@ -17,7 +17,7 @@ namespace AutoBus.Domain.Interfaces
 
         Task Update(List<Viaje> viajes);
 
-        Task Get(int ID);
+        Task<Viaje> Get(int ID);
 
         Task<List<Viaje>> Getall();
 

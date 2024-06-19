@@ -36,12 +36,6 @@ namespace AutoBus.Domain.Models
         public class BusSelectModel : BusBaseModel 
     {
         public int BusId { get; set; }
-        public List<AsientoSelectModel> Asientos;
-
-        public List<ViajeSelectModel> viajes;
-
-
-
     }
 
 }

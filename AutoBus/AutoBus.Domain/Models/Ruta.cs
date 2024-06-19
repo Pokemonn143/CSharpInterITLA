@@ -27,7 +27,6 @@ namespace AutoBus.Domain.Models
     public class RutaSelectModel : RutaBaseModel
     {
         public int RutaId { get; set; }
-        public List<ViajeSelectModel> viajes;
     }
 
 }
