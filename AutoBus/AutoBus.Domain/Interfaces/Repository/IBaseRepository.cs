@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AutoBus.Domain.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
@@ -14,7 +15,9 @@ namespace AutoBus.Domain.Interfaces.Repository
 
         Task Update(T Entity);
 
-        Task Update(List<T> Entity);
+        Task Update(List<T> Entidades);
+
+        Task<bool> Exists(Expression<Func<T, bool>> filter);
 
         Task<T> Get(int ID);
 
