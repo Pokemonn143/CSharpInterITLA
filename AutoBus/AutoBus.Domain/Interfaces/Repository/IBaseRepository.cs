@@ -5,7 +5,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AutoBus.Domain.Interfaces
+namespace AutoBus.Domain.Interfaces.Repository
 {
     public interface IBaseRepository<T> where T : class
     {
@@ -18,7 +18,7 @@ namespace AutoBus.Domain.Interfaces
 
         Task<T> Get(int ID);
 
-        Task<List<T>> Getall(Expression<Func<T, bool>>filter);
+        Task<List<T>> Getall(Expression<Func<T, bool>> filter);
 
 
     }

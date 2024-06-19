@@ -8,6 +8,7 @@ namespace AutoBus.Domain.Models
     {
        
         public int? BusId { get;  set; }
+        public string? BusNombre { get; set; }
         public int? NumeroPiso { get;  set; }
         public int? NumeroAsiento { get;  set; }
         public DateTime? FechaCreacion { get; set; }

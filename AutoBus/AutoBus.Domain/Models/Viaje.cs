@@ -12,6 +12,8 @@ namespace AutoBus.Domain.Models
 
         
         public int? BusId { get;  set; }
+
+        public string? BusNombre { get; set; }
         public int? RutaId { get;  set; }
         public DateTime? FechaSalida { get;  set; }
         public TimeSpan? HoraSalida { get;  set; }

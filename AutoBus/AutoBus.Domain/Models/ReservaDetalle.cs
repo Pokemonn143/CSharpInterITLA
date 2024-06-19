@@ -8,7 +8,10 @@ namespace AutoBus.Domain.Models
     {
         
         public int? ReservaId { get;  set; }
+
         public int? AsientoId { get;  set; }
+
+        public int? NumeroAsiento { get; set; }
 
         public DateTime? FechaCreacion { get; set; }
 
