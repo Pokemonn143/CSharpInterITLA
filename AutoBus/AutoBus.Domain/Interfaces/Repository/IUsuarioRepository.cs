@@ -11,7 +11,7 @@ namespace AutoBus.Domain.Interfaces.Repository
     public interface IUsuarioRepository : IBaseRepository<Usuario>
     {
 
-        List<UsuarioSelectModel> GetUsuarios();
+        List<UsuarioSelectModel> ObtenerUsuariosConNombresYApellidos();
 
     }
 }

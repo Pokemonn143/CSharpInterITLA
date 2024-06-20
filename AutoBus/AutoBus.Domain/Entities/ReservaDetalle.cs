@@ -14,7 +14,7 @@ namespace AutoBus.Domain.Entities
         public int IdReservaDetalle { get; set; }
         public int? IdReserva { get; set; }
         public int? IdAsiento { get; set; }
-        [Column(TypeName = "datetime")]
+        
         
 
         [ForeignKey("IdReserva")]

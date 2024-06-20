@@ -3,6 +3,7 @@ using AutoBus.Domain.Interfaces.Repository;
 using AutoBus.Domain.Models;
 using AutoBus.Infraestructure.Context;
 using AutoBus.Infraestructure.Core;
+using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -15,14 +16,22 @@ namespace AutoBus.Infraestructure.Repositories
     public class ViajeRepository : BaseRepository<Viaje>, IViajeRepository
     {
         private readonly BusDbContext _DbContext;
-        public ViajeRepository(BusDbContext context) : base(context)
+        private readonly IMapper _mapper;
+        public ViajeRepository(BusDbContext context, IMapper mapper) : base(context)
         {
             this._DbContext = context;
+            this._mapper = mapper;
 
         }
-        public List<ViajeSelectModel> GetViajes()
+        public List<ViajeSelectModel> ObtenerViajesDisponibles()
         {
-            throw new NotImplementedException();
+            var viajes = _DbContext.Viajes
+            .Where(v => v.FechaSalida != null && v.FechaLlegada != null && v.AsientoDisponibles > 0)
+            .ToList();
+
+            var ViajeModels = _mapper.Map<List<ViajeSelectModel>>(viajes);
+
+            return ViajeModels;
         }
     }
 }

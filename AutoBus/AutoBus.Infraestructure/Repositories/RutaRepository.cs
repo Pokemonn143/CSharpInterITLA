@@ -3,6 +3,7 @@ using AutoBus.Domain.Interfaces.Repository;
 using AutoBus.Domain.Models;
 using AutoBus.Infraestructure.Context;
 using AutoBus.Infraestructure.Core;
+using AutoMapper;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,13 +15,21 @@ namespace AutoBus.Infraestructure.Repositories
     public class RutaRepository : BaseRepository<Ruta>, IRutaRepository
     {
         private readonly BusDbContext _DbContext;
-        public RutaRepository(BusDbContext context) : base(context)
+        private readonly IMapper _mapper;
+        public RutaRepository(BusDbContext context, IMapper mapper) : base(context)
         {
             this._DbContext = context;
+            this._mapper = mapper;
         }
-        public List<RutaSelectModel> GetRutas()
+        public List<RutaSelectModel> ObtenerRutasConOrigenYDestino()
         {
-            throw new NotImplementedException();
+            var rutas = _DbContext.Ruta
+             .Where(r => !string.IsNullOrEmpty(r.Origen) && !string.IsNullOrEmpty(r.Destino))
+             .ToList();
+
+            var RutasModels = _mapper.Map<List<RutaSelectModel>>(rutas);
+
+            return RutasModels;
         }
     }
 }

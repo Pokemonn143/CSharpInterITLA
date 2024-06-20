@@ -22,7 +22,7 @@ namespace AutoBus.Domain.Entities
         [StringLength(50)]
         [Unicode(false)]
         public string? Destino { get; set; }
-        [Column(TypeName = "datetime")]
+        
        
 
         [InverseProperty("IdRutaNavigation")]

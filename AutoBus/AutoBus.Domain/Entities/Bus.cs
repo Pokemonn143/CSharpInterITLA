@@ -28,7 +28,7 @@ namespace AutoBus.Domain.Entities
         public int? CapacidadPiso2 { get; set; }
         public int? CapacidadTotal { get; set; }
         public bool? Disponible { get; set; }
-        [Column(TypeName = "datetime")]
+        
         
 
         [InverseProperty("IdBusNavigation")]

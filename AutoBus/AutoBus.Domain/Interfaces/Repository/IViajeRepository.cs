@@ -11,7 +11,7 @@ namespace AutoBus.Domain.Interfaces.Repository
     public interface IViajeRepository : IBaseRepository<Viaje>
     {
 
-        List<ViajeSelectModel> GetViajes();
+        List<ViajeSelectModel> ObtenerViajesDisponibles();
 
     }
 }

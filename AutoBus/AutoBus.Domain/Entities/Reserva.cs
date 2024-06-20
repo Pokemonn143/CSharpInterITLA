@@ -22,7 +22,7 @@ namespace AutoBus.Domain.Entities
         public int? AsientosReservados { get; set; }
         [Column(TypeName = "decimal(10, 2)")]
         public decimal? MontoTotal { get; set; }
-        [Column(TypeName = "datetime")]
+        
         
 
         [ForeignKey("IdViaje")]

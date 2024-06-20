@@ -1,8 +1,11 @@
 ﻿using AutoBus.Domain.Entities;
+using AutoBus.Domain.Interfaces;
 using AutoBus.Domain.Interfaces.Repository;
 using AutoBus.Domain.Models;
 using AutoBus.Infraestructure.Context;
 using AutoBus.Infraestructure.Core;
+using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,13 +17,21 @@ namespace AutoBus.Infraestructure.Repositories
     public class ReservaRepository : BaseRepository<Reserva>, IReservaRepository
     {
         private readonly BusDbContext _DbContext;
-        public ReservaRepository(BusDbContext context) : base(context)
+        private readonly IMapper _mapper;
+        public ReservaRepository(BusDbContext context, IMapper mapper) : base(context)
         {
             this._DbContext = context;
+            this._mapper = mapper;
         }
-        public List<ReservaDetalleSelectModel> GetReservas()
+        public List<ReservaSelectModel> GetReservasByPasajero (int pasajero)
         {
-            throw new NotImplementedException();
+            var reservas = _DbContext.Reservas
+            .Where(r => r.IdPasajero == pasajero)
+            .ToList();
+
+            var ReservaModels = _mapper.Map<List<ReservaSelectModel>>(reservas);
+
+            return ReservaModels;
         }
     }
 }

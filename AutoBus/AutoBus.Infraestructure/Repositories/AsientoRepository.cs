@@ -3,28 +3,35 @@ using AutoBus.Domain.Interfaces.Repository;
 using AutoBus.Domain.Models;
 using AutoBus.Infraestructure.Context;
 using AutoBus.Infraestructure.Core;
-using System;
-using System.Collections.Generic;
+using AutoBus.Infraestructure.Extensions;
+using AutoMapper;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
+
 
 namespace AutoBus.Infraestructure.Repositories
 {
     public class AsientoRepository:BaseRepository<Asiento>, IAsientoRepository
     {
         private readonly BusDbContext _DbContext;
-        public AsientoRepository(BusDbContext context):base(context) 
+        private readonly IMapper _mapper;
+        public AsientoRepository(BusDbContext context, IMapper mapper) :base(context) 
         
         { 
         
             this ._DbContext = context;
+            this._mapper = mapper;
         
         }
 
         public List<AsientoSelectModel> GetAsientos()
         {
-            throw new NotImplementedException();
+            var Asientos = (from As in this._DbContext.Asientos
+                            join Bu in this._DbContext.buses on As.IdBus equals Bu.IdBus
+                            select As).ToList();
+            var AsientoModels = _mapper.Map<List<AsientoSelectModel>>(Asientos);
+
+            return AsientoModels;
         }
     }
     }

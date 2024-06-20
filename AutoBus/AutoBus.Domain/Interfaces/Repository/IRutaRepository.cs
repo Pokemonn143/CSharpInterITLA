@@ -11,7 +11,7 @@ namespace AutoBus.Domain.Interfaces.Repository
     public interface IRutaRepository : IBaseRepository<Ruta>
     {
 
-        List<RutaSelectModel> GetRutas();
+        List<RutaSelectModel> ObtenerRutasConOrigenYDestino();
 
     }
 }

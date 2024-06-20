@@ -10,6 +10,6 @@ namespace AutoBus.Domain.Interfaces.Repository
 {
     public interface IReservaRepository : IBaseRepository<Reserva>
     {
-        List<ReservaDetalleSelectModel> GetReservas();
+        List<ReservaSelectModel> GetReservasByPasajero(int pasajero);
     }
 }
