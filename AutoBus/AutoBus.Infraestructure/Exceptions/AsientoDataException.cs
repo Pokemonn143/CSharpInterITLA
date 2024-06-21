@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace AutoBus.Infraestructure.Exceptions
 {
-    internal class Class1
+    public class AsientoDataException:Exception
     {
+
+        public AsientoDataException(string message):base( message)
+        {
+            
+        }
+
     }
 }
