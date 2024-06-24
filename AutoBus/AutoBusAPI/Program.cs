@@ -1,4 +1,5 @@
 using AutoBus.Infraestructure.Context;
+using AutoBus.Infraestructure.Extensions;
 using AutoMapper;
 using IOC.Dependencies;
 using Microsoft.EntityFrameworkCore;
@@ -11,7 +12,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<BusDbContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("BusConnection")));
 builder.Services.AddRepositoriesDependencies();
-builder.Services.AddAutoMapper(typeof(Profile));
+builder.Services.AddAutoMapper(typeof(Profiles));
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
