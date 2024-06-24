@@ -8,6 +8,6 @@ namespace AutoBus.Domain.Core
 {
     public abstract class DeleteEntityModelBase
     {
-        AsientoId
+        public int Id { get; set; }
     }
 }

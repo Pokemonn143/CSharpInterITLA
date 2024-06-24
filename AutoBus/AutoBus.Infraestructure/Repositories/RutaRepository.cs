@@ -3,6 +3,7 @@ using AutoBus.Domain.Interfaces.Repository;
 using AutoBus.Domain.Models;
 using AutoBus.Infraestructure.Context;
 using AutoBus.Infraestructure.Core;
+using AutoBus.Infraestructure.Exceptions;
 using AutoMapper;
 using System;
 using System.Collections.Generic;
@@ -21,6 +22,21 @@ namespace AutoBus.Infraestructure.Repositories
             this._DbContext = context;
             this._mapper = mapper;
         }
+
+
+        public override async Task Save(Ruta entity)
+        {
+            ArgumentNullException.ThrowIfNull(entity, "");
+
+            if ((await base.Exists(cd => cd.IdRuta == entity.IdRuta))) { 
+
+                throw new RutaDataException("");
+            }
+            base.Save(entity);
+
+        }
+
+
         public List<RutaSelectModel> ObtenerRutasConOrigenYDestino()
         {
             var rutas = _DbContext.Ruta

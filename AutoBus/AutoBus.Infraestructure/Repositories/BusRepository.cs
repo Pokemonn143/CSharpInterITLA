@@ -3,6 +3,7 @@ using AutoBus.Domain.Interfaces.Repository;
 using AutoBus.Domain.Models;
 using AutoBus.Infraestructure.Context;
 using AutoBus.Infraestructure.Core;
+using AutoBus.Infraestructure.Exceptions;
 using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -22,6 +23,20 @@ namespace AutoBus.Infraestructure.Repositories
             this._DbContext = context;
             this._mapper = mapper;
         }
+
+        public override async Task Save(Bus entity)
+        {
+            ArgumentNullException.ThrowIfNull(entity, "");
+
+            if ((await base.Exists(cd => cd.IdBus == entity.IdBus)))
+            { 
+                throw new AsientoDataException("");
+            }
+            base.Save(entity);
+
+        }
+
+
         public List<BusSelectModel> GetBuses()
         {
             var availableBuses = _DbContext.buses

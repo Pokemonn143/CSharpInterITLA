@@ -21,40 +21,40 @@ namespace AutoBus.Infraestructure.Core
             this._entities = this._dbContext.Set<T>();
         }
 
-        public async Task<bool> Exists(Expression<Func<T, bool>> filter)
+        public virtual async Task<bool> Exists(Expression<Func<T, bool>> filter)
         {
             return await this._entities.AnyAsync(filter);
         }
 
-        public async Task<T> Get(int ID)
+        public virtual async Task<T> Get(int ID)
         {
             return await _entities.FindAsync(ID);
         }
 
-        public async Task<List<T>> Getall(Expression<Func<T, bool>> filter)
+        public virtual async Task<List<T>> Getall(Expression<Func<T, bool>> filter)
         {
             return await _entities.Where(filter).ToListAsync();
         }
 
-        public async Task Save(T Entity)
+        public virtual async Task Save(T Entity)
         {
             this._entities.Add(Entity);
             await this._dbContext.SaveChangesAsync();
         }
 
-        public async Task Save(List<T> Entidades)
+        public virtual async Task Save(List<T> Entidades)
         {
             this._entities.AddRange(Entidades);
             await this._dbContext.SaveChangesAsync();
         }
 
-        public async Task Update(T Entity)
+        public virtual async Task Update(T Entity)
         {
             this._entities.Update(Entity);
             await this._dbContext.SaveChangesAsync();
         }
 
-        public async Task Update(List<T> Entidades)
+        public virtual async Task Update(List<T> Entidades)
         {
             this._entities.UpdateRange(Entidades);
             await this._dbContext.SaveChangesAsync();

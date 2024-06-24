@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 using AutoBus.Domain.Core;
 using Microsoft.EntityFrameworkCore;
 
@@ -28,11 +29,12 @@ namespace AutoBus.Domain.Entities
         public int? CapacidadPiso2 { get; set; }
         public int? CapacidadTotal { get; set; }
         public bool? Disponible { get; set; }
-        
-        
 
+
+        [JsonIgnore]
         [InverseProperty("IdBusNavigation")]
         public virtual ICollection<Asiento> Asientos { get; set; }
+        [JsonIgnore]
         [InverseProperty("IdBusNavigation")]
         public virtual ICollection<Viaje> Viajes { get; set; }
     }

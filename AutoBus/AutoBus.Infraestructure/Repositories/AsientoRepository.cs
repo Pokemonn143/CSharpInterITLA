@@ -3,6 +3,7 @@ using AutoBus.Domain.Interfaces.Repository;
 using AutoBus.Domain.Models;
 using AutoBus.Infraestructure.Context;
 using AutoBus.Infraestructure.Core;
+using AutoBus.Infraestructure.Exceptions;
 using AutoBus.Infraestructure.Extensions;
 using AutoMapper;
 using System.Linq;
@@ -23,6 +24,20 @@ namespace AutoBus.Infraestructure.Repositories
             this._mapper = mapper;
         
         }
+
+
+        public override async Task Save(Asiento entity) 
+        {
+            ArgumentNullException.ThrowIfNull(entity, "");
+
+            if ((await base.Exists(cd => cd.IdAsiento == entity.IdAsiento))) { 
+
+                throw new AsientoDataException("");
+            }
+            base.Save(entity);
+
+        }
+
 
         public List<AsientoSelectModel> GetAsientos()
         {

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 using AutoBus.Domain.Core;
 using Microsoft.EntityFrameworkCore;
 
@@ -22,9 +23,9 @@ namespace AutoBus.Domain.Entities
         [StringLength(50)]
         [Unicode(false)]
         public string? Destino { get; set; }
-        
-       
 
+
+        [JsonIgnore]
         [InverseProperty("IdRutaNavigation")]
         public virtual ICollection<Viaje> Viajes { get; set; }
     }

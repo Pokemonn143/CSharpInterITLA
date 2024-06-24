@@ -3,6 +3,7 @@ using AutoBus.Domain.Interfaces.Repository;
 using AutoBus.Domain.Models;
 using AutoBus.Infraestructure.Context;
 using AutoBus.Infraestructure.Core;
+using AutoBus.Infraestructure.Exceptions;
 using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -23,6 +24,22 @@ namespace AutoBus.Infraestructure.Repositories
             this._mapper = mapper;
 
         }
+
+
+        public override async Task Save(Viaje entity)
+        {
+            ArgumentNullException.ThrowIfNull(entity, "");
+
+            if ((await base.Exists(cd => cd.IdViaje == entity.IdViaje))) { 
+
+                throw new ViajeDataException("");
+            }
+
+            base.Save(entity);
+
+        }
+
+
         public List<ViajeSelectModel> ObtenerViajesDisponibles()
         {
             var viajes = _DbContext.Viajes

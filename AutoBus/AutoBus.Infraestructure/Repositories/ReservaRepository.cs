@@ -4,6 +4,7 @@ using AutoBus.Domain.Interfaces.Repository;
 using AutoBus.Domain.Models;
 using AutoBus.Infraestructure.Context;
 using AutoBus.Infraestructure.Core;
+using AutoBus.Infraestructure.Exceptions;
 using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -23,6 +24,22 @@ namespace AutoBus.Infraestructure.Repositories
             this._DbContext = context;
             this._mapper = mapper;
         }
+
+
+        public override async Task Save(Reserva entity)
+        {
+            ArgumentNullException.ThrowIfNull(entity, "");
+
+            if ((await base.Exists(cd => cd.IdReserva == entity.IdReserva))) { 
+
+                throw new ReservaDataException("");
+            }
+
+            base.Save(entity);
+
+        }
+
+
         public List<ReservaSelectModel> GetReservasByPasajero (int pasajero)
         {
             var reservas = _DbContext.Reservas
