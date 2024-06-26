@@ -7,7 +7,8 @@ namespace AutoBus.Domain.Models
         public DateTime? FechaCreacion { get; set; }
         public string? Origen { get;  set; }
         public string? Destino { get;  set; }
-        
+        public bool IsDeleted { get; set; }
+
     }
 
     public class RutaDeleteModel : DeleteEntityModelBase { }

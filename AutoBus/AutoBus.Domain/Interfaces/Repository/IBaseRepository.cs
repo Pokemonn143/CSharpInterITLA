@@ -23,6 +23,6 @@ namespace AutoBus.Domain.Interfaces.Repository
 
         Task<List<T>> Getall(Expression<Func<T, bool>> filter);
 
-
+        Task Delete(T Entity);
     }
 }

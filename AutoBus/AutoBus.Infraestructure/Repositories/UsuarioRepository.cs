@@ -36,10 +36,25 @@ namespace AutoBus.Infraestructure.Repositories
 
         }
 
+
+        public override async Task Delete(Usuario Entity)
+        {
+            ArgumentNullException.ThrowIfNull(Entity, "");
+            if (!(await base.Exists(cd => cd.IdUsuario == Entity.IdUsuario)))
+            {
+
+                throw new UsuarioDataException("");
+            }
+            Entity.IsDeleted = true;
+            base.Delete(Entity);
+
+
+        }
+
         public List<UsuarioSelectModel> ObtenerUsuariosConNombresYApellidos()
         {
             var usuarios = _DbContext.Usuarios
-           .Where(u => !string.IsNullOrEmpty(u.Nombres) && !string.IsNullOrEmpty(u.Apellidos))
+           .Where(u => !string.IsNullOrEmpty(u.Nombres) && !string.IsNullOrEmpty(u.Apellidos) && !u.IsDeleted)
            .ToList();
 
             var UsuarioModels = _mapper.Map<List<UsuarioSelectModel>>(usuarios);

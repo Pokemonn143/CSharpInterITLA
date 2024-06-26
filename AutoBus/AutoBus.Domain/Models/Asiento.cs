@@ -12,6 +12,7 @@ namespace AutoBus.Domain.Models
         public int? NumeroPiso { get;  set; }
         public int? NumeroAsiento { get;  set; }
         public DateTime? FechaCreacion { get; set; }
+        public bool IsDeleted { get; set; }
     }
 
     public class AsientoDeleteModel : DeleteEntityModelBase { }

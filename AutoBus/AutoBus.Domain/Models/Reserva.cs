@@ -16,6 +16,7 @@ namespace AutoBus.Domain.Models
         public int? AsientosReservados { get;  set; }
         public decimal? MontoTotal { get;  set; }
         public DateTime? FechaCreacion { get; set; }
+        public bool IsDeleted { get; set; }
 
     }
 

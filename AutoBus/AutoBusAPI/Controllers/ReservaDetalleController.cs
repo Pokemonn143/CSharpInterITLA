@@ -1,5 +1,6 @@
 ﻿using AutoBus.Domain.Entities;
 using AutoBus.Domain.Interfaces.Repository;
+using AutoBus.Infraestructure.Repositories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
@@ -58,6 +59,21 @@ namespace AutoBusAPI.Controllers
                 return BadRequest();
             }
             await _reservaDetalleRepository.Update(reservaDetalle);
+            return NoContent();
+        }
+
+
+        [HttpDelete("Delete/{id}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var ReservaDetalle = await _reservaDetalleRepository.Get(id);
+            if (ReservaDetalle == null || ReservaDetalle.IsDeleted)
+            {
+                return NotFound();
+            }
+
+            await _reservaDetalleRepository.Delete(ReservaDetalle);
+
             return NoContent();
         }
 

@@ -69,5 +69,19 @@ namespace AutoBusAPI.Controllers
             return NoContent();
         }
 
+        [HttpDelete("Delete/{id}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var bus = await _busRepository.Get(id);
+            if (bus == null || bus.IsDeleted)
+            {
+                return NotFound();
+            }
+
+            await _busRepository.Delete(bus);
+
+            return NoContent();
+        }
+
     }
 }

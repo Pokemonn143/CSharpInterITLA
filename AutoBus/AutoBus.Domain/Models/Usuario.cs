@@ -13,6 +13,7 @@ namespace AutoBus.Domain.Models
         public string? Clave { get;  set; }
         public string? TipoUsuario { get;  set; }
         public DateTime? FechaCreacion { get; set; }
+        public bool IsDeleted { get; set; }
 
     }
 

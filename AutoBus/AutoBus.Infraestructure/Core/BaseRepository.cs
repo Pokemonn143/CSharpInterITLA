@@ -59,6 +59,13 @@ namespace AutoBus.Infraestructure.Core
             this._entities.UpdateRange(Entidades);
             await this._dbContext.SaveChangesAsync();
         }
+
+        public virtual async Task Delete (T Entity)
+        {
+            
+            this._entities.Update(Entity);
+            await this._dbContext.SaveChangesAsync();
+        }
     }
     
     }

@@ -36,11 +36,25 @@ namespace AutoBus.Infraestructure.Repositories
 
         }
 
+        public override async Task Delete(Bus Entity)
+        {
+            ArgumentNullException.ThrowIfNull(Entity, "");
+            if (!(await base.Exists(cd => cd.IdBus == Entity.IdBus)))
+            {
+
+                throw new BusDataException("");
+            }
+            Entity.IsDeleted = true;
+            base.Delete(Entity);
+
+
+        }
+
 
         public List<BusSelectModel> GetBuses()
         {
             var availableBuses = _DbContext.buses
-           .Where(b => b.Disponible == true)
+           .Where(b => b.Disponible == true && !b.IsDeleted)
            .ToList();
 
             var BusModels = _mapper.Map<List<BusSelectModel>>(availableBuses);

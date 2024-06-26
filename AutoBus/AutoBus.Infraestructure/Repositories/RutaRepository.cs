@@ -37,10 +37,24 @@ namespace AutoBus.Infraestructure.Repositories
         }
 
 
+        public override async Task Delete(Ruta Entity)
+        {
+            ArgumentNullException.ThrowIfNull(Entity, "");
+            if (!(await base.Exists(cd => cd.IdRuta == Entity.IdRuta)))
+            {
+
+                throw new RutaDataException("");
+            }
+            Entity.IsDeleted = true;
+            base.Delete(Entity);
+
+
+        }
+
         public List<RutaSelectModel> ObtenerRutasConOrigenYDestino()
         {
             var rutas = _DbContext.Ruta
-             .Where(r => !string.IsNullOrEmpty(r.Origen) && !string.IsNullOrEmpty(r.Destino))
+             .Where(r => !string.IsNullOrEmpty(r.Origen) && !string.IsNullOrEmpty(r.Destino) && !r.IsDeleted)
              .ToList();
 
             var RutasModels = _mapper.Map<List<RutaSelectModel>>(rutas);

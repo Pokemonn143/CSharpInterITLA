@@ -6,6 +6,7 @@ using AutoBus.Infraestructure.Core;
 using AutoBus.Infraestructure.Exceptions;
 using AutoBus.Infraestructure.Extensions;
 using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using System.Linq;
 
 
@@ -39,10 +40,24 @@ namespace AutoBus.Infraestructure.Repositories
         }
 
 
+        public override async Task Delete(Asiento Entity)
+        {
+            ArgumentNullException.ThrowIfNull(Entity, "");
+            if(!(await base.Exists(cd => cd.IdAsiento == Entity.IdAsiento))) {
+
+                throw new AsientoDataException("");
+            }
+            Entity.IsDeleted = true;
+            base.Delete(Entity);
+
+
+        }
+
         public List<AsientoSelectModel> GetAsientos()
         {
             var Asientos = (from As in this._DbContext.Asientos
                             join Bu in this._DbContext.buses on As.IdBus equals Bu.IdBus
+                            where !As.IsDeleted
                             select As).ToList();
             var AsientoModels = _mapper.Map<List<AsientoSelectModel>>(Asientos);
 

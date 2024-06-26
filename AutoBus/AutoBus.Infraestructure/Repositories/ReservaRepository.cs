@@ -40,10 +40,25 @@ namespace AutoBus.Infraestructure.Repositories
         }
 
 
+        public override async Task Delete(Reserva Entity)
+        {
+            ArgumentNullException.ThrowIfNull(Entity, "");
+            if (!(await base.Exists(cd => cd.IdReserva == Entity.IdReserva)))
+            {
+
+                throw new ReservaDataException("");
+            }
+            Entity.IsDeleted = true;
+            base.Delete(Entity);
+
+
+        }
+
+
         public List<ReservaSelectModel> GetReservasByPasajero (int pasajero)
         {
             var reservas = _DbContext.Reservas
-            .Where(r => r.IdPasajero == pasajero)
+            .Where(r => r.IdPasajero == pasajero && !r.IsDeleted)
             .ToList();
 
             var ReservaModels = _mapper.Map<List<ReservaSelectModel>>(reservas);

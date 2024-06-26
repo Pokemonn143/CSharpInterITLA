@@ -11,5 +11,6 @@ namespace AutoBus.Domain.Core
     {
         [Column(TypeName = "datetime")]
         public DateTime? FechaCreacion { get; set; }
+        public bool IsDeleted { get; set; }
     }
 }
