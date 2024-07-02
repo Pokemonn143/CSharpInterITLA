@@ -5,6 +5,7 @@ using AutoMapper;
 using System.Threading.Tasks;
 using Xunit;
 
+namespace BusRepoTest;
 public class BusRepositoryTests
 {
     private readonly BusRepository _repository;
@@ -12,7 +13,7 @@ public class BusRepositoryTests
 
     public BusRepositoryTests()
     {
-        var dbContext = DbContextInMemory.GetInMemoryDbContext();
+        var dbContext = BusDbContextInMemoryTests.GetInMemoryDbContext();
         _mapper = new MapperConfiguration(cfg => { }).CreateMapper();
         _repository = new BusRepository(dbContext, _mapper);
     }

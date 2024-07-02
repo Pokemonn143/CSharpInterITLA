@@ -5,6 +5,7 @@ using AutoMapper;
 using System.Threading.Tasks;
 using Xunit;
 
+namespace ReservaDetalleRepoTest;
 public class ReservaDetalleRepositoryTests
 {
     private readonly ReservaDetalleRepository _repository;
@@ -12,7 +13,7 @@ public class ReservaDetalleRepositoryTests
 
     public ReservaDetalleRepositoryTests()
     {
-        var dbContext = DbContextInMemory.GetInMemoryDbContext();
+        var dbContext = BusDbContextInMemoryTests.GetInMemoryDbContext();
         _mapper = new MapperConfiguration(cfg => { }).CreateMapper();
         _repository = new ReservaDetalleRepository(dbContext, _mapper);
     }

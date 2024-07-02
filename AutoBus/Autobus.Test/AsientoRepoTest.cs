@@ -5,6 +5,7 @@ using AutoMapper;
 using System.Threading.Tasks;
 using Xunit;
 
+namespace AsientoRepoTest;
 public class AsientoRepositoryTests
 {
     private readonly AsientoRepository _repository;
